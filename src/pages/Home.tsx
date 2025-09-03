@@ -144,23 +144,23 @@ const Home = () => {
       <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Why Choose Our Pet Nutrition Coaching?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Why Choose Our Pet Nutrition Coaching?</h2>
+            <p className="text-xl text-foreground/80 max-w-2xl mx-auto font-medium">
               Science-backed nutrition plans designed specifically for your pet's unique needs
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-all duration-300">
+              <Card key={index} className="text-center border-0 shadow-soft hover:shadow-medium transition-all duration-300 bg-card">
                 <CardHeader>
                   <div className="mx-auto w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
                     {benefit.icon}
                   </div>
-                  <CardTitle className="text-xl">{benefit.title}</CardTitle>
+                  <CardTitle className="text-xl text-foreground">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{benefit.description}</CardDescription>
+                  <CardDescription className="text-base text-foreground/70 font-medium leading-relaxed">{benefit.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}

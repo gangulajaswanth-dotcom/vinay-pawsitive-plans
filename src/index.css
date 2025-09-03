@@ -10,7 +10,7 @@ All colors MUST be HSL.
   :root {
     /* Health-focused color palette inspired by pet nutrition coaching */
     --background: 0 0% 100%;
-    --foreground: 160 15% 15%;
+    --foreground: 160 20% 10%;
 
     --card: 0 0% 100%;
     --card-foreground: 160 15% 15%;
@@ -29,7 +29,7 @@ All colors MUST be HSL.
 
     /* Muted: Soft neutral backgrounds */
     --muted: 145 15% 96%;
-    --muted-foreground: 160 10% 45%;
+    --muted-foreground: 160 15% 35%;
 
     /* Accent: Fresh green for CTAs */
     --accent: 120 50% 55%;
